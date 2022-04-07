@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Challenge</title>
+    <link rel="stylesheet" href="css-sizing.css">
+</head>
+<body>
+    <h2>Box sizzing</h2>
+        <p>In this task, you have two boxes. The first should be sized so that the height will be at least 100 pixels tall, even if there is less content than would cause it to grow to that height, however, the content should not overflow if there is more content than fits in 100 pixels. Test this box by removing the content from the HTML to make sure you still get a 100 pixel tall box even with no content. The second box should be fixed at 100 pixels tall, so that content will overflow if there is too much.</p>
+        <p></p>
+        <section class="preview">
+            <div class="box box1"><p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. </p></div>
+            <br>
+            <div class="box box2"><p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd.</p></div>
+        </section>
+        <br>
+        <textarea class="playable css" style="height: 280px;">
+            .box1 { border: 5px solid teal; width: 400px; } .box2 { border: 5px solid teal; width: 400px; }
+        </textarea>
+        <textarea class="playable html" style="height: 80px;">
+            <div class="box box1"><p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. </p></div>
+            <br>
+            <div class="box box2"><p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd.</p></div>
+        </textarea>
+        <script src="playable.js"></script>
+        
+        <div class="button"><input id="reset" type="button" value="Reset"></div>
+        <a href="index.html">Back to main</a>
+        
+    </body>
+    </html>
+</body>
+</html>

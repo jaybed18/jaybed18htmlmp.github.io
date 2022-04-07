@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Duplicated Box Model Task:</title>
+     <link rel="stylesheet" href="boxmodel.css">
+     <style class="edit"> 
+     .standard {
+        border: 5px solid teal; background-color: #A5CFE3; padding: 40px; margin: 
+        40px; width: 350px; height: 150px;
+    }
+     .alternate{ box-sizing:  border-box; } 
+     </style>
+</head>
+<body>
+    <h2>Box Model</h2>
+    <p>This is a duplicated version of box model exercise</p>
+    <p></p>
+    <section class="preview">
+        <div class="standard">I am using the standard box model</div>
+        <div class="standard alternate">I am using the alternate box model </div>
+    </section>
+
+    <textarea class="playable css" style="height: 280px;">
+        .standard {
+            border: 5px solid teal; background-color: #A5CFE3; padding: 40px; margin: 
+            40px; width: 350px; height: 150px;
+        }
+        .alternate{ box-sizing: ; border: ;
+        } 
+    </textarea>
+    <textarea class="playable html" style="height: 80px;">
+        <div class="standard">I am using the standard box model</div>
+        <div class="alternate">I am using the alternate box model </div>
+    </textarea>
+    <script src="playable.js"></script>
+    
+    <div class="button"><input id="reset" type="button" value="Reset"></div>
+    <a href="index.html">Back to main</a>
+    
+</body>
+</html>
